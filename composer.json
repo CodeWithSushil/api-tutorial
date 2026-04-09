@@ -3,7 +3,7 @@
     "description": "Note Keeping",
     "type": "project",
     "require": {
-        "php": "^8.5"
+        "php": "^8.3"
     },
     "require-dev": {
         "phpstan/phpstan": "^2.1",
@@ -14,7 +14,12 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Sushilk\\NoteKeeping\\": "src/"
+            "App\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
         }
     },
     "authors": [
