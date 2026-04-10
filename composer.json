@@ -39,6 +39,7 @@
     },
     "scripts": {
         "test:unit": "vendor/bin/phpunit",
+        "test:coverage": "vendor/bin/phpunit --coverage-text --coverage-clover coverage.xml",
         "test:lint": "vendor/bin/pint",
         "test:type": "vendor/bin/phpstan",
         "test": [
