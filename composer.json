@@ -35,5 +35,8 @@
             "phpstan/extension-installer": true,
             "pestphp/pest-plugin": true
         }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
     }
 }
