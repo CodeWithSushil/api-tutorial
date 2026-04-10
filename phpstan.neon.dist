@@ -6,6 +6,8 @@ parameters:
     paths:
         - src
 
+    reportUnmatchedIgnoredErrors: true
+
     type_coverage:
         declare: 100
         return_type: 100
