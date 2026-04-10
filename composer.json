@@ -9,7 +9,8 @@
         "phpstan/phpstan": "^2.1",
         "phpstan/extension-installer": "^1.4",
         "phpunit/phpunit": "^13.1",
-        "tomasvotruba/type-coverage": "^2.1"
+        "tomasvotruba/type-coverage": "^2.1",
+        "laravel/pint": "^1.29"
     },
     "license": "MIT",
     "autoload": {
@@ -37,6 +38,13 @@
         }
     },
     "scripts": {
-        "test": "vendor/bin/phpunit"
+        "test:unit": "vendor/bin/phpunit",
+        "test:lint": "vendor/bin/pint",
+        "test:type": "vendor/bin/phpstan",
+        "test": [
+          "@test:lint",
+          "@test:type",
+          "@test:unit"
+        ]
     }
 }

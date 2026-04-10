@@ -4,16 +4,16 @@ declare(strict_types=1);
 
 namespace Tests;
 
+use App\User;
 use PHPUnit\Framework\Attributes\CoversClass;
 use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\TestCase;
-use App\User;
 
 #[CoversClass(User::class)]
 class UserTest extends TestCase
 {
-  #[Test]
-  public function testUserCanBeCreated(): void
+    #[Test]
+    public function test_user_can_be_created(): void
     {
         $user = new User('John', 30);
 
@@ -21,8 +21,8 @@ class UserTest extends TestCase
         $this->assertSame(30, $user->getAge());
     }
 
-  #[Test]
-    public function testSettersWork(): void
+    #[Test]
+    public function test_setters_work(): void
     {
         $user = new User('Jane', 25);
         $user->setName('Alice');
