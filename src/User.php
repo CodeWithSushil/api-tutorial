@@ -8,37 +8,25 @@ class User
 {
     private string $name;
 
-    private ?string $email = null;
+    private string $email;
 
-    /**
-     * @param  string  $name
-     */
-    public function setName($name)
+    public function setName(string $name): void
     {
-        return $this->name = $name;
+        $this->name = $name;
     }
 
-    /**
-     * @param  string  $email
-     */
-    public function setEmail($email)
+    public function setEmail(string $email): void
     {
-        return $this->email = $email;
+        $this->email = $email;
     }
 
-    /**
-     * @return string
-     */
-    public function getName()
+    public function getName(): string
     {
-        return 'Hello '.$this->name;
+        return $this->name;
     }
 
-    /**
-     * @return string
-     */
-    public function getEmail()
+    public function getEmail(): string
     {
-        return 'Email '.$this->email;
+        return $this->email;
     }
 }

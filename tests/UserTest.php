@@ -13,22 +13,20 @@ use PHPUnit\Framework\TestCase;
 class UserTest extends TestCase
 {
     #[Test]
-    public function test_user_can_be_created(): void
+    public function test_user_name(): void
     {
-        $user = new User('John', 30);
-
+        $user = new User;
+        $user->setName('John');
         $this->assertSame('John', $user->getName());
-        $this->assertSame(30, $user->getAge());
     }
 
     #[Test]
-    public function test_setters_work(): void
+    public function test_user_email(): void
     {
-        $user = new User('Jane', 25);
-        $user->setName('Alice');
-        $user->setAge(35);
+        $user = new User;
 
-        $this->assertSame('Alice', $user->getName());
-        $this->assertSame(35, $user->getAge());
+        $user->setEmail('alice@example.com');
+
+        $this->assertSame('alice@example.com', $user->getEmail());
     }
 }
