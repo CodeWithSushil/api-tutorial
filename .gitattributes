@@ -1,0 +1,10 @@
+/.gitignore        export-ignore
+/.editorconfig     export-ignore
+/.gitattributes    export-ignore
+/.phpunit.cache/   export-ignore
+/tests/            export-ignore
+/phpunit.xml       export-ignore
+/phpstan.neon.dist export-ignore
+/composer.lock     export-ignore
+/.github/          export-ignore
+
