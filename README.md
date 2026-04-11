@@ -3,6 +3,7 @@
 [![Tests](https://github.com/CodeWithSushil/api-tutorial/actions/workflows/tests.yml/badge.svg?branch=master)](https://github.com/CodeWithSushil/api-tutorial/actions/workflows/tests.yml)
 ![Coverage](https://codecov.io/gh/CodeWithSushil/api-tutorial/branch/master/graph/badge.svg)
 [![Lint](https://github.com/CodeWithSushil/api-tutorial/actions/workflows/lint.yml/badge.svg?branch=master)](https://github.com/CodeWithSushil/api-tutorial/actions/workflows/lint.yml)
+[![CodeQL](https://github.com/CodeWithSushil/api-tutorial/actions/workflows/github-code-scanning/codeql/badge.svg?branch=master)](https://github.com/CodeWithSushil/api-tutorial/actions/workflows/github-code-scanning/codeql)
 
 Learn API development with Vanilla PHP & SQLite3 database with PDO.
 
