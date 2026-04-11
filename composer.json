@@ -1,6 +1,12 @@
 {
     "name": "sushilk/note-keeping",
     "description": "Note Keeping",
+    "keywords": [
+        "api",
+        "crud",
+        "note-keeping",
+        "sushilk"
+    ],
     "type": "project",
     "require": {
         "php": "^8.3"
