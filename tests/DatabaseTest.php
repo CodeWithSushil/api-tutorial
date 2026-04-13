@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Tests;
 
 use App\Database;
@@ -12,7 +14,7 @@ use PHPUnit\Framework\TestCase;
 class DatabaseTest extends TestCase
 {
     #[Test]
-    public function test_create_database()
+    public function test_create_database(): void
     {
         $db = new Database('Database.db');
         $this->assertInstanceOf(PDO::class, $db);
