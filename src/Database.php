@@ -20,7 +20,7 @@ class Database extends PDO
             $this->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
         } catch (PDOException $e) {
-            exit('Connection failed: '.$e->getMessage());
+            throw new \RuntimeException('Connection failed: '.$e->getMessage());
         }
     }
 }

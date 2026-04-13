@@ -19,4 +19,10 @@ class DatabaseTest extends TestCase
         $db = new Database('Database.db');
         $this->assertInstanceOf(PDO::class, $db);
     }
+
+    public function test_database_exception()
+    {
+        $this->expectException(\RuntimeException::class);
+        new Database('/invalid/path/to/db.sqlite');
+    }
 }
