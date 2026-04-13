@@ -1,0 +1,20 @@
+<?php
+
+namespace Tests;
+
+use App\Database;
+use PDO;
+use PHPUnit\Framework\Attributes\CoversClass;
+use PHPUnit\Framework\Attributes\Test;
+use PHPUnit\Framework\TestCase;
+
+#[CoversClass(Database::class)]
+class DatabaseTest extends TestCase
+{
+    #[Test]
+    public function test_create_database()
+    {
+        $db = new Database('Database.db');
+        $this->assertInstanceOf(PDO::class, $db);
+    }
+}
