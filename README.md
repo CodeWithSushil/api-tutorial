@@ -8,3 +8,11 @@
 
 Learn API development with Vanilla PHP & SQLite3 database with PDO.
 
+--- 
+
+
+## Development Server Start
+
+```bash
+php -S localhost:8080 -t public
+```
