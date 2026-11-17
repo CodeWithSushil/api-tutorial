@@ -10,14 +10,14 @@
     "type": "project",
     "require": {
         "php": "^8.3",
-        "firebase/php-jwt": "^7.0"
+        "firebase/php-jwt": "^7.2"
     },
     "require-dev": {
-        "phpstan/phpstan": "^2.1",
+        "phpstan/phpstan": "^2.3",
         "phpstan/extension-installer": "^1.4",
-        "phpunit/phpunit": "^13.1",
-        "tomasvotruba/type-coverage": "^2.1",
-        "laravel/pint": "^1.29"
+        "phpunit/phpunit": "^13.4",
+        "tomasvotruba/type-coverage": "^2.5",
+        "laravel/pint": "^1.32"
     },
     "license": "MIT",
     "autoload": {
